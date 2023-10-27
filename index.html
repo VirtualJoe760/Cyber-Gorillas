@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benjis Code</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <style>
+       
+    </style>
+
+</head>
+<body>
+    <nav class="myNav navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand mx-5 benjis-bar text-white" href="#">Benji Code</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          </div>
+          <div class="collapse navbar-collapse mx-5" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item text-white" href="#">Action</a></li>
+                  <li><a class="dropdown-item text-white" href="#">Another action</a></li>
+                  <li><a class="dropdown-item text-white" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<!--    // Original CTA Section
+      <header class="cta">
+        <div class="row">
+            <div class="col-7 text-center text-break">
+                <h1>A leader in Cyber-security.</h1>
+                <button type="button" class="btn btn-primary">Audits</button>
+            </div>
+            <div class="col-5 text-center text-break">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo harum consequuntur dolorem magnam expedita pariatur, sit sunt est culpa. Ex tempora odio molestiae hic voluptatum enim quaerat autem. Animi, labore!</p>
+            </div>
+        </div>
+      </header>
+
+    -->
+    <header>
+    <video autoplay muted loop id="myVideo">
+        <source src="/assets/videos/coder.mp4" type="video/mp4">
+      </video>
+
+      <div class="content">
+        <h1>Benji Hernandez</h1>
+        <p>Cyber-security professional with 20 years in the industry.</p>
+        <!-- Use a button to pause/play the video with JavaScript -->
+        <button class="btn btn-outline-success" onclick="myFunction()">Code with me</button>
+      </div>
+    </header>
+
+
+
+
+      <main>
+      <div class="container px-4 px-lg-5 myNewPosts">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <!-- Post preview-->
+                <h1 class="my-5">New Blog Posts</h1>
+                <div class="post-preview">
+                    <a href="post.html">
+                        <h2 class="post-title">Man must explore, and this is exploration at its greatest</h2>
+                        <h3 class="post-subtitle">Problems look mighty small from 150 miles up</h3>
+                    </a>
+                    <p class="post-meta">
+                        Posted by
+                        <a href="#!">Start Bootstrap</a>
+                        on September 24, 2023
+                    </p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-4">
+                <!-- Post preview-->
+                <div class="post-preview">
+                    <a href="post.html"><h2 class="post-title">I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.</h2></a>
+                    <p class="post-meta">
+                        Posted by
+                        <a href="#!">Start Bootstrap</a>
+                        on September 18, 2023
+                    </p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-4">
+                <!-- Post preview-->
+                <div class="post-preview">
+                    <a href="post.html">
+                        <h2 class="post-title">Science has not yet mastered prophecy</h2>
+                        <h3 class="post-subtitle">We predict too much for the next year and yet far too little for the next ten.</h3>
+                    </a>
+                    <p class="post-meta">
+                        Posted by
+                        <a href="#!">Start Bootstrap</a>
+                        on August 24, 2023
+                    </p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-4">
+                <!-- Post preview-->
+                <div class="post-preview">
+                    <a href="post.html">
+                        <h2 class="post-title">Failure is not an option</h2>
+                        <h3 class="post-subtitle">Many say exploration is part of our destiny, but it’s actually our duty to future generations.</h3>
+                    </a>
+                    <p class="post-meta">
+                        Posted by
+                        <a href="#!">Start Bootstrap</a>
+                        on July 8, 2023
+                    </p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-4">
+                <!-- Pager-->
+                <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
