@@ -4,8 +4,8 @@ tags: "services"
 elementId: appDev
 bodyTitle: Full Stack App Development
 subTitle: American made, fast secure & professional
-cardTitleLeft: View projects we've worked on
-cardTitleCenter: Book a consultation
+cardTitleLeft: View Portfolio
+cardTitleCenter: Book Zoom Call
 cardTitleRight: Get started
 cardSubheadLeft: We've worked on a variety of projects ranging from extensions, mobile, web applications and more.
 cardSubheadCenter: We sit down via zoom and talk about your goals and how we can meet your expectations.

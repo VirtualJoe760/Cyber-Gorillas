@@ -14,20 +14,17 @@
 
     <!-- Netlify CMS -->
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
     
 </head>
 
 <body>
-    
 
     {% include 'nav.njk' %}
     {% include 'header.njk' %}
-    {% include 'services-pannel.njk' %}
-    <footer>
-    {% include "footer.njk" %}
-    </footer>
     
+    {% include 'featuredblogsnippets.njk' %}
+    {% include "footer.njk" %}
+    {{ content | safe }}
     
 
 
