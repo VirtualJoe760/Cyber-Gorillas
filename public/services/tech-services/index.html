@@ -12,6 +12,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/myStyle.css">
 
+    <!-- Netlify CMS -->
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
     
 </head>
 
@@ -327,6 +330,17 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
 
-    <!-- Custom JS -->
+    <!-- Netlify Script -->
+    <script>
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", user => {
+            if (!user) {
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+        }
+      </script>
 </body>
 </html>
