@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevate your blog with Netlify CMS</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/myStyle.css">
+
+    <!-- Netlify CMS -->
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    
+</head>
+
+<body>
+
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a href="/" class="navbar-brand nav-link fs-4 ms-sm-2 mt-1">
+            Cyber-Gorillas</a>
+        <button class="navbar-toggler collapsed navbar-toggler-icon d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle Navigation">
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav me-4">
+            <li class="nav-item">
+                <a href="/" aria-current="page" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="/about/who-are-we" class="nav-link">About</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Blog
+                </a>
+                <ul class="dropdown-menu text-start" >
+                    <li><a href="#" class="dropdown-item">Programming</a></li>
+                    <li><a href="#" class="dropdown-item">Basic Tech</a></li>
+                    <li><a href="#" class="dropdown-item">Certifications</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a href="#" class="dropdown-item"><strong>All Posts</strong></a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="/services/tech-services" class="nav-link">Services</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav>
+    <div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8">
+            <!-- Post content-->
+            <article>
+                <!-- Post header-->
+                <header class="mb-4">
+                    <!-- Post title-->
+                    <h1 class="fw-bolder mb-1">Elevate your blog with Netlify CMS</h1>
+                    <!-- Post meta content-->
+                    <div class="text-muted fst-italic mb-2">
+                        <p>Written by: Gorilla Joe </p>
+                    </div>
+                    <div class="text-muted fst-italic mb-2"></div>
+                    <!-- Post categories-->
+                    <a class="badge bg-secondary text-decoration-none link-light" href="#!">[&quot;posts&quot;, &quot;featured, &quot;web dev&quot;]</a>
+                </header>
+                <!-- Preview image figure-->
+                <figure class="mb-4"><img class="img-fluid rounded" src="/assets/photos/netlify-login.jpg" alt="..." /></figure>
+                <!-- Post content-->
+                <section class="mb-5">
+                    <p><h1>Elevate Your Blog with Netlify CMS: A Seamless Content Management Experience</h1>
+<p>In the vast ocean of the web, where every drop of content counts, managing and updating a blog can be a breeze or a storm. Thankfully, with tools like <a href="https://www.netlifycms.org/">Netlify CMS</a>, it's smooth sailing ahead for content creators and developers alike. Netlify CMS strips away the complexity of content management, allowing you to focus on what you do best—creating content that resonates with your audience.</p>
+<h2>Understanding the Role of CMS in Static Websites</h2>
+<p>Content Management Systems (CMS) traditionally power dynamic sites—think WordPress or Joomla. However, the rise of static site generators like Jekyll, Hugo, and Eleventy has shifted the landscape. Static sites offer unparalleled speed, security, and reliability, but they often lack an intuitive way to manage content. That's where Netlify CMS comes in, providing a friendly interface to manage your markdown files, which in turn become the beautiful pages of your website.</p>
+<h2>Why Netlify is a Game Changer</h2>
+<p>Netlify has made a name for itself as a frontrunner in the hosting and automation of static sites. The platform offers:</p>
+<ul>
+<li><strong>High Performance:</strong> By serving pre-built files over a Content Delivery Network (CDN), your site loads with incredible speed.</li>
+<li><strong>Continuous Deployment:</strong> Make a change, push to your Git repository, and Netlify takes care of the rest, deploying your updates automatically.</li>
+<li><strong>Enhanced Security:</strong> Without a database or server-side scripting, static sites are less vulnerable to attacks, and Netlify's role-based access control further fortifies your site.</li>
+</ul>
+<h2>Posting with Ease Using Netlify CMS</h2>
+<p>Getting started with Netlify CMS means initiating it on your existing static site and configuring it to meet your needs. Once set up, here's what you can look forward to:</p>
+<ul>
+<li><strong>User-Friendly Dashboard:</strong> Log in to a simple, clean interface where creating and updating posts is as easy as writing an email.</li>
+<li><strong>Media Management:</strong> Upload images and files directly through the CMS, and it will handle the rest, organizing your media for easy access.</li>
+<li><strong>Extensible and Customizable:</strong> Tailor content types, widgets, and editor interfaces to fit the exact needs of your site or blog.</li>
+</ul>
+<h2>Setting up Netlify CMS for Your Blog</h2>
+<p>Here's a quick rundown of how to integrate Netlify CMS with your static site:</p>
+<ol>
+<li><strong>Add Netlify CMS to Your Site:</strong> It's as simple as including a couple of scripts and creating a new HTML file that will serve as your CMS dashboard.</li>
+<li><strong>Configure Your Backend:</strong> Connect Netlify CMS to your site's repository. Netlify works with a variety of Git providers, including GitHub, GitLab, and Bitbucket.</li>
+<li><strong>Define Your Content Structure:</strong> Use the <code>config.yml</code> file to set up collections and fields that match the content structures you're using in your static site.</li>
+<li><strong>Secure Login with Netlify Identity:</strong> Implement Netlify's Identity service to manage and authenticate CMS users.</li>
+</ol>
+<h2>Conclusion</h2>
+<p>Netlify CMS is more than just a convenience—it's a transformative tool that empowers you to maintain a current and engaging blog without getting entangled in the technicalities. By coupling Netlify's robust hosting with the user-friendly CMS, you get to enjoy the benefits of a dynamic site while keeping the bloat and security issues at bay.</p>
+<p>Ready to take your content to new heights with Netlify CMS? Set sail on your journey towards a more manageable and enjoyable blogging experience. Whether you're a solo blogger or part of a larger team, Netlify CMS can be your silent partner in the art of storytelling.</p>
+</p>
+                </section>
+            </article>
+
+            <!-- DISQUS Comments section || Cybergorillas-2.disqus.com/admin LOGIN WITH GOOGLE -->
+            <section class="mb-5">
+                <div id="disqus_thread"></div>
+                <script>
+                    /**
+                    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                    /*
+                    var disqus_config = function () {
+                    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                    };
+                    */
+                    (function () { // DON'T EDIT BELOW THIS LINE
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://cybergorillas-2.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
+                        powered
+                        by Disqus.</a></noscript>
+            </section>
+
+            <!-- BOOT STRAP - Comments section
+            <section class="mb-5">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <!-- Comment form
+                        <form class="mb-4"><textarea class="form-control" rows="3"
+                                placeholder="Join the discussion and leave a comment!"></textarea></form>
+                        <!-- Comment with nested comments
+                        <div class="d-flex mb-4">
+                            <!-- Parent comment
+                            <div class="flex-shrink-0"><img class="rounded-circle"
+                                    src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                            <div class="ms-3">
+                                <div class="fw-bold">Commenter Name</div>
+                                If you're going to lead a space frontier, it has to be government; it'll never be
+                                private enterprise. Because the space frontier is dangerous, and it's expensive, and it
+                                has unquantified risks.
+                                <!-- Child comment 1
+                                <div class="d-flex mt-4">
+                                    <div class="flex-shrink-0"><img class="rounded-circle"
+                                            src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                                    <div class="ms-3">
+                                        <div class="fw-bold">Commenter Name</div>
+                                        And under those conditions, you cannot establish a capital-market evaluation of
+                                        that enterprise. You can't get investors.
+                                    </div>
+                                </div>
+                                <!-- Child comment 2
+                                <div class="d-flex mt-4">
+                                    <div class="flex-shrink-0"><img class="rounded-circle"
+                                            src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                                    <div class="ms-3">
+                                        <div class="fw-bold">Commenter Name</div>
+                                        When you put money directly to a problem, it makes a good headline.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single comment
+                        <div class="d-flex">
+                            <div class="flex-shrink-0"><img class="rounded-circle"
+                                    src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                            <div class="ms-3">
+                                <div class="fw-bold">Commenter Name</div>
+                                When I look at the universe and all the ways the universe wants to kill us, I find it
+                                hard to reconcile that with statements of beneficence.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div> -->
+
+
+
+
+
+            <!-- BOOTSTRAP Side widgets
+            <div class="col-lg-6">
+                <!-- Search widget
+                <div class="card my-card mb-4">
+                    <div class="card-header my-card-header">Search</div>
+                    <div class="card-body my-card-body">
+                        <div class="input-group">
+                            <input class="form-control" type="text" placeholder="Enter search term..."
+                                aria-label="Enter search term..." aria-describedby="button-search" />
+                            <button class="btn btn-success" id="button-search" type="button">Go!</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Categories widget
+                <div class="card my-card mb-4">
+                    <div class="card-header my-card-header">Blog Tags</div>
+                    <div class="card-body my-card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#!" class="nav-link">Web Design</a></li>
+                                    <li><a href="#!" class="nav-link">HTML</a></li>
+                                    <li><a href="#!" class="nav-link">Freebies</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#!" class="nav-link">JavaScript</a></li>
+                                    <li><a href="#!" class="nav-link">CSS</a></li>
+                                    <li><a href="#!" class="nav-link">Tutorials</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+            
+    <div class="container footer-container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top border-success">
+      <p class="col-md-4 mb-0 text-body-secondary nav-link">© 2023 Cyber Gorillas</p>
+  
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+  
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="/" class="nav-link px-2">Home</a></li>
+        <li class="nav-item"><a href="/about/who-are-we" class="nav-link px-2">About</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2">Blog</a></li>
+        <li class="nav-item"><a href="/services/tech-services" class="nav-link px-2">Services</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2">Projects</a></li>
+        
+      </ul>
+    </footer>
+  </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <!-- Netlify Script -->
+    <script>
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", user => {
+            if (!user) {
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+        }
+      </script>
+</body>
+</html>
