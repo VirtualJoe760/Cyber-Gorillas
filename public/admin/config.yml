@@ -14,8 +14,19 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Author", name: "author", widget: "string"}
-      - {label: "Tags", name: "tags", widget: "list", default: ["featured" , "posts"]}
+      - {label: "Tags", name: "tags", widget: "list", default: ["featured", "posts"]}
       - {label: "Image", name: "image", widget: "image"}
-      - {label: "Image Alt Txt", name: "imageAlt", widget: "string"}
+      - {label: "Image Alt Text", name: "imageAlt", widget: "string"}
       - {label: "Layout", name: "layout", widget: "string", default: "basepage.njk"}
       - {label: "Body", name: "body", widget: "markdown"}
+      # SEO fields
+      - {label: "SEO Meta Title", name: "seoTitle", widget: "string"}
+      - {label: "SEO Meta Description", name: "seoDescription", widget: "string"}
+      - {label: "SEO Keywords", name: "seoKeywords", widget: "list"}
+      # Social media sharing fields
+      - {label: "Open Graph Title", name: "ogTitle", widget: "string"}
+      - {label: "Open Graph Description", name: "ogDescription", widget: "string"}
+      - {label: "Open Graph Image", name: "ogImage", widget: "image"}
+      - {label: "Twitter Card Title", name: "twitterTitle", widget: "string"}
+      - {label: "Twitter Card Description", name: "twitterDescription", widget: "string"}
+      - {label: "Twitter Card Image", name: "twitterImage", widget: "image"}

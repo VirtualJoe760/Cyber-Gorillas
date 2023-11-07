@@ -12,9 +12,33 @@ body {
   margin-top: auto;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2 {
+  color: rgb(0, 16, 241);
+  font-family: 'PT Mono', monospace;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+h3, h4, h5, h6 {
+  color: #f13000;
+  font-family: 'PT Mono', monospace;
+}
+
+p {
   color: #fff;
   font-family: 'PT Mono', monospace;
+}
+
+strong {
+  color: #f13000;
+  font-family: 'PT Mono', monospace;
+}
+
+li, ol, ul {
+  color: rgb(225, 248, 97);
+  font-family: 'PT Mono', monospace;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
 }
 
 hr {

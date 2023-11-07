@@ -1,0 +1,9 @@
+{
+    "pagination": {
+      "data": "collections.blog",
+      "size": 5,
+      "alias": "posts"
+    },
+    "permalink": "featured-blog-snippets/{{ pageNumber }}/"
+  }
+  
