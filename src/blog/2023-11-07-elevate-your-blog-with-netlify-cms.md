@@ -4,7 +4,7 @@ description: Discover how Netlify CMS transforms your static website into a
   dynamic blogging platform. Effortless content management, streamlined
   publishing, and the power of static site performance—all in one.
 author: Gorilla Joe
-tags: posts, featured, web dev, netlify
+tags: ["featured" ," tutorials", " web development", " javascript", "posts"]
 image: /assets/photos/netlify-login.jpg
 imageAlt: netlify cms decap
 layout: basepage.njk
