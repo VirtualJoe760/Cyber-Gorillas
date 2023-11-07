@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap-icons": "^1.11.1",
+    "decap-cms-app": "^3.0.12",
     "figlet": "^1.7.0",
     "markdown-it": "^13.0.2"
   },

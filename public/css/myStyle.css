@@ -25,8 +25,6 @@ hr {
 /* NAVBAR... TOGGLER TUTORIAL https://www.youtube.com/watch?v=_MrShB9fh7U&ab_channel=ADesignerWhoCodes */
 
 
-
-
 .navbar-toggler {
   width: 20px;
   height: 20px;
@@ -156,11 +154,12 @@ div.school-options-dropdown {
 
 .post-thumb-nail {
   border: solid 1px #00f128;
-
+  object-fit: cover;
 }
 
 .post-thumb-nail-mobile {
   border: solid 1px #00f128;
+  object-fit: cover;
 }
 
 /*-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0 CAROUSEL SECTION HOME PAGE -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0*/
@@ -194,7 +193,57 @@ div.school-options-dropdown {
 }
 
 
+/*-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0 SERVICES PAGE -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0*/
 
+.services {
+  padding-top: 5rem;
+  max-height: 50vh;
+}
+
+.card {
+  background-color: #000000;
+  border-color:#00f128
+
+}
+
+.card-header-tabs {
+  border-color:#00f128;
+  background-color: black;
+}
+
+.card-header-tabs:active {
+  background: transparent;
+}
+
+.card-header {
+  border-color:#00f128;
+}
+
+.nav-tabs {
+  border-color:#00f128;
+}
+.nav-tabs:hover {
+  border-color:blue;
+}
+
+.card-parent {
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom: 0px;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #0b07d5;
+  background-color: #000;
+  border-color: #00f128;
+  border-bottom: 0px;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+  border-color: #1e12d3 #0b07d5 #00f128;
+  isolation: isolate;
+}
 
 /*-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0 MEDIA QUERIES -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0*/
 

@@ -2,7 +2,7 @@
 title: Hello World - In Javascript
 author: Joseph Sardella
 date: 2023-11-05
-tags: ["posts", "featured"]
+tags: ["featured" ," tutorials", " web development", " javascript", "posts"]
 layout: "basepage.njk"
 image: /assets/photos/slide1.jpg
 imageAlt: This is a test

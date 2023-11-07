@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/myStyle.css">
+
+    
+</head>
+
+<body>
+    
+
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a href="/" class="navbar-brand nav-link fs-4 ms-sm-2 mt-1">
+            Cyber-Gorillas</a>
+        <button class="navbar-toggler collapsed navbar-toggler-icon d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle Navigation">
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav me-4">
+            <li class="nav-item">
+                <a href="/" aria-current="page" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="/about/who-are-we" class="nav-link">About</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Blog
+                </a>
+                <ul class="dropdown-menu text-start" >
+                    <li><a href="#" class="dropdown-item">Programming</a></li>
+                    <li><a href="#" class="dropdown-item">Basic Tech</a></li>
+                    <li><a href="#" class="dropdown-item">Certifications</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a href="#" class="dropdown-item"><strong>All Posts</strong></a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="/services/tech-services" class="nav-link">Services</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav>
+    <header>
+    <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="2000">
+                <div class="overlay-image" style="background-image: url(/assets/photos/slide1.jpg);"></div>
+                <div class="container carousel-container">
+                    <h1>Tech Problems making you bananas?</h1>
+                    <p>Whether you are looking for a website, app, or tech support we&#39;ve got you covered. Visit our get help page to submit a ticket and we can get to work trying to find the best solution for you.</p>
+                    <a href=/services class="btn btn-lg btn-outline-warning my-3">Get Help</a>
+                </div>
+            </div>
+            <div class="carousel-item" data-interval="2000">
+                <div class="overlay-image" style="background-image: url( /assets/photos/slide3.jpg);"></div>
+                <div class="container carousel-container">
+                    <h1>Looking to learn?</h1>
+                    <p>Check out our tutorials section, We offer a variety of tutorials on subjects like web design, certifications, basic tech support, and more! If you have any requests, visit our get help section and we might even make a tutorial on it!</p>
+                    <a href=/services class="btn btn-lg btn-outline-warning my-3">Learn Now</a>
+                </div>
+            </div>
+            <div class="carousel-item" data-interval="2000">
+                <div class="overlay-image" style="background-image: url( /assets/photos/slide2.jpg);"></div>
+                <div class="container carousel-container">
+                    <h1>Need a website?</h1>
+                    <p>Discover our options to build you a website fast so your business can swing onto the internet in no time!!</p>
+                    <a href=/services class="btn btn-lg btn-outline-warning my-3">See Services</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <section class="services">
+  <div class="card-parent card">
+    <div class="card-header">
+      <ul class="nav nav-tabs card-header-tabs justify-content-center" role="tablist">
+        
+        
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="basicTech-tab" data-bs-toggle="tab" href="#basicTech" role="tab" aria-controls="basicTech" aria-selected="true">Basic Tech</a>
+          </li>
+        
+          <li class="nav-item" role="presentation">
+            <a class="nav-link " id="webDev-tab" data-bs-toggle="tab" href="#webDev" role="tab" aria-controls="webDev" aria-selected="false">Web Development</a>
+          </li>
+        
+          <li class="nav-item" role="presentation">
+            <a class="nav-link " id="appDev-tab" data-bs-toggle="tab" href="#appDev" role="tab" aria-controls="appDev" aria-selected="false">App Development</a>
+          </li>
+        
+          <li class="nav-item" role="presentation">
+            <a class="nav-link " id="pcBuild-tab" data-bs-toggle="tab" href="#pcBuild" role="tab" aria-controls="pcBuild" aria-selected="false">PC Building</a>
+          </li>
+        
+          <li class="nav-item" role="presentation">
+            <a class="nav-link " id="seoManage-tab" data-bs-toggle="tab" href="#seoManage" role="tab" aria-controls="seoManage" aria-selected="false">SEO &amp; Management</a>
+          </li>
+        
+      </ul>
+    </div>
+    <div class="tab-content" id="myTabContent">
+      
+      
+        <div class="tab-pane fade show active" id="basicTech" role="tabpanel" aria-labelledby="basicTech-tab">
+          <h2 class="card-title text-center mt-5">U.S.-based Tech Support</h2>
+          <p class="card-text text-center mb-5">We pride ourselves on our customer service.</p>
+          <div class="container">
+            <div class="row justify-content-around text-start">
+              <!-- Card Left -->
+              <div class="card mb-3" style="width: 18rem;">
+                <div class="card-body d-flex flex-column">
+                  <h3 class="card-title my-auto">Remote Support</h3>
+                  <p class="card-text text-justify my-auto py-2">We solve your problems on the phone, remotely controling your devices.</p>
+                  <a href="#" class="btn btn-outline-success mt-auto">Schedule Appointment</a>
+                </div>
+              </div>
+              <!-- Card Center -->
+              <div class="card mb-3" style="width: 18rem;">
+                <div class="card-body d-flex flex-column">
+                  <h3 class="card-title">Facetime &amp; Zoom calls</h3>
+                  <p class="card-text text-justify my-auto py-2">Show us your problems face to face, we will solve them and explain everything.</p>
+                  <a href="#" class="btn btn-outline-success mt-auto">Schedule Appointment</a>
+                </div>
+              </div>
+              <!-- Card Right -->
+              <div class="card mb-3" style="width: 18rem;">
+                <div class="card-body d-flex flex-column">
+                  <h3 class="card-title">In-person Support.</h3>
+                  <p class="card-text text-justify my-auto py-2">Available in participating locations such as Coachella Valley &amp; St. Luis.</p>
+                  <a href="#" class="btn btn-outline-success mt-auto">Schedule Appointment</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="tab-pane fade " id="webDev" role="tabpanel" aria-labelledby="webDev-tab">
+          <h2 class="card-title text-center mt-5">Jamstack Web Development</h2>
+          <p class="card-text text-center mb-5">Solidify your business on the web with static site generation. Perfect for blogs and E-commerce websites.</p>
+          <div class="container">
+            <div class="row justify-content-around text-start">
+              <!-- Card Left -->
+              <div class="card mb-3" style="width: 18rem;">
+                <div class="card-body d-flex flex-column">
+                  <h3 class="card-title my-auto">Static Websites</h3>
+                  <p class="card-text text-justify my-auto py-2">Fast, Reliable, Secure.. Our websites make it easy to add content, look beautiful, and operate on low to no monthly fees.</p>
+                  <a href="#" class="btn btn-outline-success mt-auto">See Portfolio</a>
+                </div>
+              </div>
+              <!-- Card Center -->
+              <div class="card mb-3" style="width: 18rem;">
+                <div class="card-body d-flex flex-column">
+                  <h3 class="card-title">E-Commerce</h3>
+                  <p class="card-text text-justify my-auto py-2">We use API&#39;s like shopify, paypal &amp; stripe to deliver on your store&#39;s solutions. We develop your store with SEO and business in mind first.</p>
+                  <a href="#" class="btn btn-outline-success mt-auto">Learn more</a>
+                </div>
+              </div>
+              <!-- Card Right -->
+              <div class="card mb-3" style="width: 18rem;">
+                <div class="card-body d-flex flex-column">
+                  <h3 class="card-title">Get Started</h3>
+                  <p class="card-text text-justify my-auto py-2">Its time to get started. Click the button below to fill out our intake form and we will submit an invoice to you from there.</p>
+                  <a href="#" class="btn btn-outline-success mt-auto">Get Started</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="tab-pane fade " id="appDev" role="tabpanel" aria-labelledby="appDev-tab">
+          <h2 class="card-title text-center mt-5">Full Stack App Development</h2>
+          <p class="card-text text-center mb-5">American made, fast secure &amp; professional</p>
+          <div class="container">
+            <div class="row justify-content-around text-start">
+              <!-- Card Left -->
+              <div class="card mb-3" style="width: 18rem;">
+                <div class="card-body d-flex flex-column">
+                  <h3 class="card-title my-auto">View projects we&#39;ve worked on</h3>
+                  <p class="card-text text-justify my-auto py-2">We&#39;ve worked on a variety of projects ranging from extensions, mobile, web applications and more.</p>
+                  <a href="#" class="btn btn-outline-success mt-auto">See Portfolio</a>
+                </div>
+              </div>
+              <!-- Card Center -->
+              <div class="card mb-3" style="width: 18rem;">
+                <div class="card-body d-flex flex-column">
+                  <h3 class="card-title">Book a consultation</h3>
+                  <p class="card-text text-justify my-auto py-2">We sit down via zoom and talk about your goals and how we can meet your expectations.</p>
+                  <a href="#" class="btn btn-outline-success mt-auto">Schedule Appointment</a>
+                </div>
+              </div>
+              <!-- Card Right -->
+              <div class="card mb-3" style="width: 18rem;">
+                <div class="card-body d-flex flex-column">
+                  <h3 class="card-title">Get started</h3>
+                  <p class="card-text text-justify my-auto py-2">Its time to get started. Click the button below to fill out our intake form and we will submit an invoice to you from there.</p>
+                  <a href="#" class="btn btn-outline-success mt-auto">Get started</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="tab-pane fade " id="pcBuild" role="tabpanel" aria-labelledby="pcBuild-tab">
+          <h2 class="card-title text-center mt-5">Fast, Powerful, Custom Computers&#39;s</h2>
+          <p class="card-text text-center mb-5">Build the pc of your dreams.</p>
+          <div class="container">
+            <div class="row justify-content-around text-start">
+              <!-- Card Left -->
+              <div class="card mb-3" style="width: 18rem;">
+                <div class="card-body d-flex flex-column">
+                  <h3 class="card-title my-auto">Book a consultation</h3>
+                  <p class="card-text text-justify my-auto py-2">We sit down via zoom and talk about your goals and how we can meet your expectations.</p>
+                  <a href="#" class="btn btn-outline-success mt-auto">Schedule Appointment</a>
+                </div>
+              </div>
+              <!-- Card Center -->
+              <div class="card mb-3" style="width: 18rem;">
+                <div class="card-body d-flex flex-column">
+                  <h3 class="card-title">Learn what you need</h3>
+                  <p class="card-text text-justify my-auto py-2">See some of our blog posts on computer components and what we recommend. We make it easy to know kind of system is best for you.</p>
+                  <a href="#" class="btn btn-outline-success mt-auto">Read Blog</a>
+                </div>
+              </div>
+              <!-- Card Right -->
+              <div class="card mb-3" style="width: 18rem;">
+                <div class="card-body d-flex flex-column">
+                  <h3 class="card-title">Start building</h3>
+                  <p class="card-text text-justify my-auto py-2">Send us the parts, or we will order them for you, fill out the order form and lets get started.</p>
+                  <a href="#" class="btn btn-outline-success mt-auto">Get Started</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="tab-pane fade " id="seoManage" role="tabpanel" aria-labelledby="seoManage-tab">
+          <h2 class="card-title text-center mt-5">SEO, Web Management &amp; Migration</h2>
+          <p class="card-text text-center mb-5">Boost your online presence with our expert SEO and seamless Web Management &amp; Migration services.</p>
+          <div class="container">
+            <div class="row justify-content-around text-start">
+              <!-- Card Left -->
+              <div class="card mb-3" style="width: 18rem;">
+                <div class="card-body d-flex flex-column">
+                  <h3 class="card-title my-auto">Search Optimization</h3>
+                  <p class="card-text text-justify my-auto py-2">Elevate your brand&#39;s online presence with our cutting-edge SEO techniques. Beat your competitors to the top of Google.</p>
+                  <a href="#" class="btn btn-outline-success mt-auto">Book Consultation</a>
+                </div>
+              </div>
+              <!-- Card Center -->
+              <div class="card mb-3" style="width: 18rem;">
+                <div class="card-body d-flex flex-column">
+                  <h3 class="card-title">Web Management</h3>
+                  <p class="card-text text-justify my-auto py-2">Experience peace of mind with our proactive Web Management service, keeping your site running smoothly 24/7.</p>
+                  <a href="#" class="btn btn-outline-success mt-auto">Learn more</a>
+                </div>
+              </div>
+              <!-- Card Right -->
+              <div class="card mb-3" style="width: 18rem;">
+                <div class="card-body d-flex flex-column">
+                  <h3 class="card-title">Website Migration</h3>
+                  <p class="card-text text-justify my-auto py-2">Transition with confidence using our Website Migration services, ensuring zero downtime and data integrity.</p>
+                  <a href="#" class="btn btn-outline-success mt-auto">Book Consultation</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</section>
+
+    <div class="container footer-container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top border-success">
+      <p class="col-md-4 mb-0 text-body-secondary nav-link">© 2023 Cyber Gorillas</p>
+  
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+  
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="/" class="nav-link px-2">Home</a></li>
+        <li class="nav-item"><a href="/about/who-are-we" class="nav-link px-2">About</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2">Blog</a></li>
+        <li class="nav-item"><a href="/services/tech-services" class="nav-link px-2">Services</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2">Projects</a></li>
+        
+      </ul>
+    </footer>
+  </div>
+    
+    
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+</body>
+</html>

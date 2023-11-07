@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "public/assets/photos"
+public_folder: "/assets/photos"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "src/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Image Alt Txt", name: "imageAlt", widget: "string"}
+      - {label: "Layout", name: "layout", widget: "string", default: "basepage.njk"}
+      - {label: "Body", name: "body", widget: "markdown"}

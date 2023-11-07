@@ -1,0 +1,51 @@
+<section class="services">
+  <div class="card-parent card">
+    <div class="card-header">
+      <ul class="nav nav-tabs card-header-tabs justify-content-center" role="tablist">
+        {# Loop through each service to create the tab links #}
+        {% for post in collections.services %}
+          <li class="nav-item" role="presentation">
+            <a class="nav-link {% if loop.first %}active{% endif %}" id="{{ post.data.elementId }}-tab" data-bs-toggle="tab" href="#{{ post.data.elementId }}" role="tab" aria-controls="{{ post.data.elementId }}" aria-selected="{% if loop.first %}true{% else %}false{% endif %}">{{ post.data.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="tab-content" id="myTabContent">
+      {# Loop through each service to create the content for each tab #}
+      {% for post in collections.services %}
+        <div class="tab-pane fade {% if loop.first %}show active{% endif %}" id="{{ post.data.elementId }}" role="tabpanel" aria-labelledby="{{ post.data.elementId }}-tab">
+          <h2 class="card-title text-center mt-5">{{ post.data.bodyTitle }}</h2>
+          <p class="card-text text-center mb-5">{{ post.data.subTitle }}</p>
+          <div class="container">
+            <div class="row justify-content-around text-start">
+              <!-- Card Left -->
+              <div class="card mb-3" style="width: 18rem;">
+                <div class="card-body d-flex flex-column">
+                  <h3 class="card-title my-auto">{{ post.data.cardTitleLeft }}</h3>
+                  <p class="card-text text-justify my-auto py-2">{{ post.data.cardSubheadLeft }}</p>
+                  <a href="#" class="btn btn-outline-success mt-auto">{{ post.data.cardButtonLeft }}</a>
+                </div>
+              </div>
+              <!-- Card Center -->
+              <div class="card mb-3" style="width: 18rem;">
+                <div class="card-body d-flex flex-column">
+                  <h3 class="card-title">{{ post.data.cardTitleCenter }}</h3>
+                  <p class="card-text text-justify my-auto py-2">{{ post.data.cardSubheadCenter }}</p>
+                  <a href="#" class="btn btn-outline-success mt-auto">{{ post.data.cardButtonCenter }}</a>
+                </div>
+              </div>
+              <!-- Card Right -->
+              <div class="card mb-3" style="width: 18rem;">
+                <div class="card-body d-flex flex-column">
+                  <h3 class="card-title">{{ post.data.cardTitleRight }}</h3>
+                  <p class="card-text text-justify my-auto py-2">{{ post.data.cardSubheadRight }}</p>
+                  <a href="#" class="btn btn-outline-success mt-auto">{{ post.data.cardButtonRight }}</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
