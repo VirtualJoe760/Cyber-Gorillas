@@ -27,6 +27,8 @@ collections:
       - {label: "Open Graph Title", name: "ogTitle", widget: "string"}
       - {label: "Open Graph Description", name: "ogDescription", widget: "string"}
       - {label: "Open Graph Image", name: "ogImage", widget: "image"}
+      - {label: "Open Graph Image Width", name: "ogImageWidth", widget: "hidden", default: "1200"}
+      - {label: "Open Graph Image Height", name: "ogImageHeight", widget: "hidden", default: "630"}
       - {label: "Twitter Card Title", name: "twitterTitle", widget: "string"}
       - {label: "Twitter Card Description", name: "twitterDescription", widget: "string"}
       - {label: "Twitter Card Image", name: "twitterImage", widget: "image"}
