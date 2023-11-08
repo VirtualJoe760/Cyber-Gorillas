@@ -2,8 +2,8 @@
 title: Hello World - In Javascript
 author: Joseph Sardella
 date: 2023-11-05
-tags: ["featured" ," tutorials", " web development", " javascript", "posts"]
-layout: "basepage.njk"
+tags: ["featured" ," tutorials", " web development", " javascript", "posts", "Programming"]
+layout: "article.njk"
 image: /assets/photos/slide1.jpg
 imageAlt: This is a test
 description: Welcome to this beginner's tutorial on JavaScript! If you're new to programming or just new to JavaScript, you're in the right place. In this tutorial, we'll walk you through creating your very first JavaScript program the classic "Hello, World!".

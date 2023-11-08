@@ -2,8 +2,8 @@
 title: Who are we?
 author: Joseph Sardella
 date: 2023-11-01
-tags: ["posts", "featured"]
-layout: "basepage.njk"
+tags: ["posts"]
+layout: "article.njk"
 image: /assets/photos/slide3.jpg
 imageAlt: This is a test
 description: Hello World! This is my very first blog post. In this post, I talk a little about my reasons for starting this blog, and what my plans are with it. I hope you enjoy and bookmark our website as one of your top favorites to visit!

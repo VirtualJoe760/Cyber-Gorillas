@@ -20,8 +20,13 @@
 <body>
 
     {% include 'nav.njk' %}
-    {% include 'about.njk' %}
+    {% include 'header.njk' %}
+    
+    {% include 'programmingbs.njk' %}
     {% include "footer.njk" %}
+    {{ content | safe }}
+    
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

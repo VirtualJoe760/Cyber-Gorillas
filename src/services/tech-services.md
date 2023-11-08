@@ -1,5 +1,5 @@
 ---
-layout: "baseofservices.njk"
+layout: "services.njk"
 tags: "posts"
 ---
 

@@ -1,0 +1,33 @@
+<div class="container list-container">
+    <div class="row">
+        <div class="col-12 justify-content-center">
+            <h1 style="color: red;">Certification Posts</h1>
+        </div>
+    </div>
+</div>
+
+{%- for post in collections.Certifications | reverse -%} 
+<div class="container">
+    <div class="row">
+        <div class="col-lg-7 col-md-10">
+            <a href="{{ post.url }}" style="text-decoration: none;"><h3 class="mt-5" style="color:blue;">{{ post.data.title }}</h3></a>
+            <p style="color:yellow;">Written by: {{ post.data.author }}</p>
+            <a href="{{ post.url }}" style="text-decoration: none;"><img src="{{ post.data.image}}" alt="{{ post.data.imageAlt }}"
+                style="width:400px; height:200px;" class="img-fluid post-thumb-nail-mobile my-5"></a>
+            <p>{{ post.data.description }}</p>
+            <a href="{{ post.url }}" class="btn btn-outline-success">Read now</a>
+        </div>       
+            <div class="col-5 col-thumb-nail">
+                <a href="{{ post.url }}" style="text-decoration: none;"><img src="{{ post.data.image}}" alt="{{ post.data.imageAlt }}"
+                    style="width:400px; height:200px;" class="img-fluid post-thumb-nail my-5"></a>
+            </div>
+    </div>
+</div>
+{% endfor %}
+<div class="container">
+    <div class="row">
+        <div class="col-11">
+            <a href="/blog" class="btn btn-outline-success float-end me-3">See Blog</a>
+        </div>
+    </div>
+</div>

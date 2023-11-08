@@ -7,7 +7,7 @@ author: Gorilla Joe
 tags: ["featured" ," tutorials", " web development", " javascript", "posts"]
 image: /assets/photos/netlify-login.jpg
 imageAlt: netlify cms decap
-layout: basepage.njk
+layout: article.njk
 ---
 # Elevate Your Blog with Netlify CMS: A Seamless Content Management Experience
 
