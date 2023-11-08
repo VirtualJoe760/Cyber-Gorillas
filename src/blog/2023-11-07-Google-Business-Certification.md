@@ -2,7 +2,7 @@
 title: "Unlocking New Opportunities: Get Google Business Certified"
 author: Gorilla Joe
 date: 2023-11-07
-tags: ["Google Business", "Certifications", "Professional Development", "SEO"]
+tags: ["Google Business", "Certifications", "Professional Development", "SEO", "featured"]
 layout: article.njk
 image: /assets/photos/google-business-certification.jpg
 imageAlt: "Google Business Certification"
