@@ -14,4 +14,7 @@ cardSubheadRight: Its time to get started. Click the button below to fill out ou
 cardButtonLeft: See Portfolio
 cardButtonCenter: Learn more
 cardButtonRight: Get Started
+cardButtonLeftUrl: 
+cardButtonCenterUrl: /blog/Programming
+cardButtonRightUrl: https://tidycal.com/josephsardella/30-minute-meeting
 ---

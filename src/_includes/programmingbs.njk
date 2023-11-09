@@ -6,7 +6,7 @@
     </div>
 </div>
 
-{%- for post in collections.Programming | reverse -%} 
+{%- for post in Programming | reverse -%} 
 <div class="container">
     <div class="row">
         <div class="col-lg-7 col-md-10">
@@ -26,8 +26,25 @@
 {% endfor %}
 <div class="container">
     <div class="row">
-        <div class="col-11">
-            <a href="/blog" class="btn btn-outline-success float-end me-3">See Blog</a>
+        <div class="col-12">
+            <nav aria-label="Page navigation" class="pagination justify-content-end">
+                <ul class=" justify-content-end no-bullets d-flex">
+                    <li class="w-100">
+                        {% if pagination.href.previous %}
+                        <a class="fs-1 no-underline nav-link" href="{{ pagination.href.previous }}#pagination"
+                            aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>{% endif %}
+                    </li>
+                    <li class="#">
+                        {% if pagination.href.next %}
+                        <a class="fs-1 no-underline nav-link" href="{{ pagination.href.next }}#pagination"
+                            aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>{% endif %}
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
 </div>

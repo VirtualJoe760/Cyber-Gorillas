@@ -13,6 +13,15 @@ body {
   padding-top: 2rem;
 }
 
+.no-bullets {
+  list-style-type: none;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+
 h1, h2 {
   color: rgb(0, 16, 241);
   font-family: 'PT Mono', monospace;
@@ -217,6 +226,11 @@ div.school-options-dropdown {
     opacity: 0.5;
 }
 
+/*-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0 MARKDOWN FILES -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0*/
+
+
+
+
 
 /*-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0 SERVICES PAGE -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0*/
 
@@ -249,6 +263,13 @@ div.school-options-dropdown {
 }
 .nav-tabs:hover {
   border-color:blue;
+  border-bottom: transparent;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+  border-color: #1e12d3
+  border-bottom: transparent;
+  isolation: isolate;
 }
 
 .card-parent {

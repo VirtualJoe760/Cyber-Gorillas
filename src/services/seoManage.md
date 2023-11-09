@@ -13,5 +13,7 @@ cardSubheadRight: Transition with confidence using our Website Migration service
 cardButtonLeft: Book Consultation 
 cardButtonCenter: Learn more
 cardButtonRight: Book Consultation
-
+cardButtonLeftUrl: https://tidycal.com/josephsardella/30-minute-meeting
+cardButtonCenterUrl: 
+cardButtonRightUrl: https://tidycal.com/josephsardella/30-minute-meeting
 ---

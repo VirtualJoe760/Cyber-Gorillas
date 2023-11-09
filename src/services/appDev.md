@@ -13,7 +13,7 @@ cardSubheadRight: Its time to get started. Click the button below to fill out ou
 cardButtonLeft: See Portfolio
 cardButtonCenter: Schedule Appointment
 cardButtonRight: Get started
-cardButtonLeftUrl:
-cardButtonCenterUrl:
-cardButtonRightUrl:
+cardButtonLeftUrl: https://tidycal.com/josephsardella/30-minute-meeting
+cardButtonCenterUrl: https://tidycal.com/josephsardella/30-minute-meeting
+cardButtonRightUrl: https://tidycal.com/josephsardella/30-minute-meeting
 ---

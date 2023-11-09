@@ -13,5 +13,7 @@ cardSubheadRight: Available in participating locations such as Coachella Valley 
 cardButtonLeft: Schedule Appointment
 cardButtonCenter: Schedule Appointment
 cardButtonRight: Schedule Appointment
-cardButtonUrl:
+cardButtonLeftUrl: https://tidycal.com/josephsardella/30-minute-meeting
+cardButtonCenterUrl: https://tidycal.com/josephsardella/30-minute-meeting
+cardButtonRightUrl: https://tidycal.com/josephsardella/30-minute-meeting
 ---

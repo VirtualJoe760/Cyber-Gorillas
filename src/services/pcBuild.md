@@ -13,5 +13,7 @@ cardSubheadRight: Send us the parts, or we will order them for you, fill out the
 cardButtonLeft: Schedule Appointment 
 cardButtonCenter: Read Blog
 cardButtonRight: Get Started
-
+cardButtonLeftUrl: https://tidycal.com/josephsardella/30-minute-meeting
+cardButtonCenterUrl: 
+cardButtonRightUrl: https://tidycal.com/josephsardella/30-minute-meeting
 ---

@@ -1,33 +1,58 @@
 <div class="container list-container">
     <div class="row">
-        <div class="col-12 justify-content-center">
+        <div class="col-12 justify-content-center" id="pagination">
             <h1 style="color: red;">Featured posts</h1>
         </div>
     </div>
 </div>
 
-{%- for post in collections.featured | reverse -%} 
+{%- for post in featured | reverse -%}
 <div class="container">
     <div class="row">
         <div class="col-lg-7 col-md-10">
-            <a href="{{ post.url }}" style="text-decoration: none;"><h3 class="mt-5" style="color:blue;">{{ post.data.title }}</h3></a>
-            <p style="color:yellow;">Written by: {{ post.data.author }}</p>
-            <a href="{{ post.url }}" style="text-decoration: none;"><img src="{{ post.data.image}}" alt="{{ post.data.imageAlt }}"
-                style="width:400px; height:200px;" class="img-fluid post-thumb-nail-mobile my-5"></a>
+            <a href="{{ post.url }}" style="text-decoration: none;">
+                <h3 class="mt-5" style="color:blue;">{{ post.data.title }}</h3>
+            </a>
+            <p style="color:yellow;">Written by: {{ post.data.author }}</p>           
+            <a href="{{ post.url }}" style="text-decoration: none;">
+                <!-- Mobile Thumbnail-->
+                <img src="{{ post.data.image}}" alt="{{ post.data.imageAlt }}" style="width:400px; height:200px;"
+                    class="img-fluid post-thumb-nail-mobile my-5">
+            </a>
             <p>{{ post.data.description }}</p>
             <a href="{{ post.url }}" class="btn btn-outline-success">Read now</a>
-        </div>       
-            <div class="col-5 col-thumb-nail">
-                <a href="{{ post.url }}" style="text-decoration: none;"><img src="{{ post.data.image}}" alt="{{ post.data.imageAlt }}"
-                    style="width:400px; height:200px;" class="img-fluid post-thumb-nail my-5"></a>
-            </div>
+        </div>
+        <!-- Desktop Thumbnail-->
+        <div class="col-5 col-thumb-nail">
+            <a href="{{ post.url }}" style="text-decoration: none;"><img src="{{ post.data.image}}"
+                    alt="{{ post.data.imageAlt }}" style="width:400px; height:200px;"
+                    class="img-fluid post-thumb-nail my-5"></a>
+        </div>
     </div>
 </div>
 {% endfor %}
+
 <div class="container">
     <div class="row">
-        <div class="col-11">
-            <a href="/blog" class="btn btn-outline-success float-end me-3">See Blog</a>
+        <div class="col-12">
+            <nav aria-label="Page navigation" class="pagination justify-content-end">
+                <ul class=" justify-content-end no-bullets d-flex">
+                    <li class="w-100">
+                        {% if pagination.href.previous %}
+                        <a class="fs-1 no-underline nav-link" href="{{ pagination.href.previous }}#pagination"
+                            aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>{% endif %}
+                    </li>
+                    <li class="#">
+                        {% if pagination.href.next %}
+                        <a class="fs-1 no-underline nav-link" href="{{ pagination.href.next }}#pagination"
+                            aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>{% endif %}
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
 </div>
