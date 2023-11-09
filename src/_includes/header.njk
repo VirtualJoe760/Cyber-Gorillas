@@ -11,7 +11,7 @@
             <div class="carousel-item active" data-interval="2000">
                 <div class="overlay-image" style="background-image: url({{ post.data.imageOne }});"></div>
                 <div class="container carousel-container">
-                    <h1>{{ post.data.titleOne }}</h1>
+                    <h1 style="{{ post.data.TitleOneColor }}">{{ post.data.titleOne }}</h1>
                     <p>{{ post.data.description1 }}</p>
                     <a href={{ post.data.urlOne }} class="btn btn-lg btn-outline-warning my-3">{{ post.data.buttonctaOne }}</a>
                 </div>
@@ -19,7 +19,7 @@
             <div class="carousel-item" data-interval="2000">
                 <div class="overlay-image" style="background-image: url( {{ post.data.imageTwo }});"></div>
                 <div class="container carousel-container">
-                    <h1>{{ post.data.titleTwo}}</h1>
+                    <h1 style="{{ post.data.TitleTwoColor }}">{{ post.data.titleTwo}}</h1>
                     <p>{{ post.data.descriptionTwo}}</p>
                     <a href={{ post.data.urlOne }} class="btn btn-lg btn-outline-warning my-3">{{ post.data.buttonctaTwo }}</a>
                 </div>
@@ -27,7 +27,7 @@
             <div class="carousel-item" data-interval="2000">
                 <div class="overlay-image" style="background-image: url( {{ post.data.imageThree }});"></div>
                 <div class="container carousel-container">
-                    <h1>{{ post.data.titleThree}}</h1>
+                    <h1 style="{{ post.data.titleThreeColor }}">{{ post.data.titleThree}}</h1>
                     <p>{{ post.data.descriptionThree}}</p>
                     <a href={{ post.data.urlOne }} class="btn btn-lg btn-outline-warning my-3">{{ post.data.buttonctaThree }}</a>
                 </div>
