@@ -4,9 +4,11 @@ description: Bye bye netlify cms, hello payload!
 author: Joey
 tags:
   - featured
+  - tutorials
+  - web development
+  - javascript
   - posts
-  - nextjs
-  - programming
+  - Programming
 image: /assets/photos/payloadcms.jpg
 imageAlt: Payload CMS Banner
 layout: article.njk
