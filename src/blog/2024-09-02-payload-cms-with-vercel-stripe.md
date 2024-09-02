@@ -6,7 +6,7 @@ tags:
   - featured
   - posts
   - nextjs
-  - javascript
+  - programming
 image: /assets/photos/payloadcms.jpg
 imageAlt: Payload CMS Banner
 layout: article.njk
